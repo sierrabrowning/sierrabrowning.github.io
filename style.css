@@ -1,13 +1,10 @@
 body {
 	background-color:#E6FFFF;
-	background-repeat: no-repeat;
-	background-size: 1024px 760px;
-	background-position: center;
-	background-attachment: local;
+	text-align: center;
 }
 
 div.banner {
-	
+	text-align: center;
 }
 
 .banner a {
