@@ -1,0 +1,36 @@
+body {
+	background-color:#E6FFFF;
+	background-repeat: no-repeat;
+	background-size: 1024px 760px;
+	background-position: center;
+	background-attachment: local;
+}
+
+div.banner {
+	
+}
+
+.banner a {
+	text-decoration: none;
+}
+
+.banner a:hover {
+	opacity: 0.5;
+}
+
+.banner ul {
+	list-style-type: none;
+	position: relative;
+}
+
+.banner li {
+	background-color: #FFB476;
+	border: none;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline;
+	font-size: 16px;
+	width: 50%;
+}
+
