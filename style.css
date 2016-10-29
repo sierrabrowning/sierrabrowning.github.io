@@ -1,8 +1,23 @@
 body {
 	background-color:#E6FFFF;
 	text-align: center;
+	font: 15px georgia, serif;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
 }
 
+.left-align {
+	text-align: left;
+	width: 95%;
+}
+
+h2,h3 {
+	text-align: left;
+	border-left: 8px solid;
+	border-color: #FFB476;
+	background-color: #A8FFFF;
+}
 div.banner {
 	text-align: center;
 }
@@ -12,6 +27,7 @@ div.banner {
 }
 
 .banner a:hover {
+	color: #000000;
 	opacity: 0.5;
 }
 
@@ -23,11 +39,55 @@ div.banner {
 .banner li {
 	background-color: #FFB476;
 	border: none;
-	padding: 15px 32px;
-	text-align: center;
+	padding: 5px 5px;
+	margin: auto;
 	text-decoration: none;
 	display: inline;
 	font-size: 16px;
-	width: 50%;
+	width: 25%;
 }
 
+table {
+	border-style: solid;
+	margin: auto;
+}
+
+td {
+	border-style: solid;
+	background-color: #75FEFE;
+	padding: 5px 10px;
+	margin: 2px;
+}
+
+.footer li {
+	border: none;
+	padding: 5px 5px;
+	margin: auto;
+	text-decoration: none;
+	display: inline;
+	font-size: 12px;
+	width: 25%;
+}
+
+.myLogo {
+	width: 100%;
+}
+
+.tsm {
+	height: 20%;
+	width: 20%;
+}
+
+.cells {
+	height: 300px;
+	width: 300px;
+}
+
+.mitosis {
+	height: 300px;
+	width: 225px;
+}
+
+.vocab {
+	text-align: left;
+}
