@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+ <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title>Mad Lib</title>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link rel="icon" href="atom2.png"/>
+</head>
+
+<body>
+<div class="banner">
+<img class="myLogo" src="oregoncoast1.jpg" alt="logo"/>
+<ul>
+<li><a href="scientificmethodreport.html">The Scientific Method</a></li>
+<li><a href="http://www.sciencemadesimple.com/scientific_method.html">Conducting Experiments</a></li>
+<li><a href="biologyreport.html">Cancer Cells</a></li>
+<li><a href="http://www.medicalnewstoday.com/articles/249141.php">Tumors</a></li>
+<li><a href="story.html">Mad Lib</a></li>
+</ul>
+</div>
+<h1>THANKSGIVING TURKEY</h1>
+<h2 id="heading"></h2>
+
+
+<p id = "stepOne"></p>
+<p id = "stepTwo"></p>
+<p id = "stepThree"></p>
+<p id = "stepFour"></p>
+
+<div class="footer">
+<ul>
+	<li>Author: Sierra Browning</li>
+	<li>Date Modified: 11/09/2016</li>
+</ul>
+</div>
+<script type="text/javascript">
+		var userName;
+		userName= prompt("Enter your name:  ");
+		document.getElementById("heading").innerHTML = "Hello " + userName + "! Ready to play some Mad Lib?";
+
+		var noun1;
+		noun1= prompt("Enter a noun for something you have in the kitchen: ");
+		var time;
+		time = prompt("Enter a time: ");
+		var verb1;
+		verb1 = prompt("Enter a verb: ");
+		document.getElementById("stepOne").innerHTML = "Begin thawing the turkey in your <span>" + noun1 + "</span> 3 days before Thanksgiving. Make sure to wake up at <span>"+ time +"</span> because the turkey takes a long time to <span>" +verb1+ "</span> .";
+		
+		var number;
+		number = prompt("Enter a number with three place values: ");
+		var ingverb;
+		ingverb = prompt("Enter a verb ending in -ing: ");
+		var bodypart;
+		bodypart = prompt("Enter a plural noun for a body part: ");
+		var place;
+		place = prompt("Enter a place: ")
+		document.getElementById("stepTwo").innerHTML = "Next, <span>" +ingverb+ "</span> off your turkey and removing its <span>" +bodypart+ "</span>. These should already be packaged by the <span>" +place+ "</span> in advance and placed inside of the turkey."
+		
+		var fraction;
+		fraction = prompt("Enter a fraction: ");
+		var measurement;
+		measurement = prompt("Enter a type of measurement: ")
+		var food1;
+		food1 = prompt("Enter a seasoning: ")
+		document.getElementById("stepThree").innerHTML = "" + verb1 + " butter on the skin of your turkey and sprinkle <span>" + fraction + " " + measurement + "</span> of <span>"+ food1 +"</span> on it. Then place it inside of the plastic bag and into the pan. Put your turkey into the <span>" + noun1 + "</span> for the time specified on the package. As the turkey is finishing up, <span> " + verb1 + "</span> make the rest of your Thanksgiving Dinner!";
+		
+		var food2;
+		food2 = prompt("Enter your favorite Thanksiving dish: ");
+		document.getElementById("stepFour").innerHTML = "Don’t forget the <span>" +food2+ "</span>! When the timer goes off, <span>" + verb1 + "</span> the turkey’s temperature. If it’s at <span>" +number+"</span> degrees, it’s safe to <span>" +verb1+ "</span>! Enjoy!";
+		
+</script>
+</body>
+</html>
