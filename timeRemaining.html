@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+ <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+ <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title>Time Remaining</title>
+	<link rel="stylesheet" type="text/css" href="projectStyle.css"/>
+	<link rel="icon" href="clockIcon.jpg"/>
+
+<script type="text/Javascript">
+	function changeFont() {
+	
+	}
+	
+	function calculateTime() {
+		var hours;
+		var minutes;
+		var convertToMinutes;
+		var addMinutes;
+		var result;
+		
+		hours = document.getElementById("hours").value;
+		minutes = document.getElementById("minutes").value;
+		convertToMinutes = 60 * parseFloat(hours);
+		addMinutes = convertToMinutes + parseFloat(minutes);
+		result = 24 - (addMinutes / 60);
+		document.getElementById("timeMessage").innerHTML = "You have " + result.toFixed(2) + " hour(s) left in your day."
+	}
+</script>
+
+</head>
+
+<body>
+
+<div class = "banner">
+<ul>
+	<li><a href="http://earthsky.org/space/what-is-time">What is time?</a></li>
+	<li><a href="http://literacy.kent.edu/salt_fork/time_priority/timemanagement/tips.html">Tips to Manage Time</a></li>
+	<li><a href="https://www.brainyquote.com/quotes/topics/topic_time.html">Time Quotes</a></li>
+	<li><a href="timeRemaining.html">Time Remaining</a></li>
+</ul>
+</div>
+
+	<h1>There are 24 hours in a day. How many do you have left?</h1>
+
+<div>
+	<h3>Personalize Your View</h3>
+	<p><label for = "font">Choose the font you would like:  </label><input type = "text" id = "font"/></p>
+	<p><button onclick="changeFont();">Change the font!</button></p>
+
+</div>
+
+</div>
+	<h3>Figure out how much time you have left in your day.</h3>
+	<p>Enter the current time below.</p>
+	<p><label for = "hours">Hours:  </label><input type = "text" id = "hours"/></p>
+	<p><label for = "minutes">Minutes:  </label><input type = "text" id = "minutes"/></p>
+	<p><button onclick="calculateTime();">What's left?</button></p>
+	<h4 id = "timeMessage"></h4>
+</div>
+
+<div>
+	<h3>What should you do with the time remaining?</h3>
+</div>
+
+</body>
+
+</html>
